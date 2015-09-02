@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style> 
+
+.LtoR {
+    position: relative;
+    -webkit-animation: LtoR 5s infinite linear; /* Chrome, Safari, Opera */
+    animation: LtoR 5s infinite linear;
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
+}
+
+.TtoB {
+	-ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    transform: rotate(90deg);
+    position: relative;
+
+    -webkit-animation: TtoB 5s infinite linear; /* Chrome, Safari, Opera */
+    animation: TtoB 5s infinite linear;
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
+	
+}
+
+.RtoL {
+	-ms-transform: rotate(180deg); 
+    -webkit-transform: rotate(180deg); 
+    transform: rotate(180deg);
+    position: relative;
+    
+    -webkit-animation: RtoL 5s infinite linear; 
+    animation: RtoL 5s infinite linear;
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+.BtoT {
+	-ms-transform: rotate(270deg); 
+    -webkit-transform: rotate(270deg); 
+    transform: rotate(270deg); 
+    position: relative;
+    
+    -webkit-animation: BtoT 5s infinite linear; 
+    animation: BtoT 5s infinite linear;
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+
+.arr_red {
+	font-size:200%;
+	max-height: 5em ;
+	max-width: 2em ;
+	color:red;
+	font-weight: bold; 
+	}
+	
+	
+.arr_blue {
+	font-size:200%;
+	max-height: 5em ;
+	max-width: 2em ;
+	color:blue;
+	font-weight: bold; 
+	}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes LtoR {
+    from {left:80px;top:140px;}
+    to {left: 140px;top:140px;}
+30%{
+   opacity: 0.3;
+ }
+70%{
+   opacity: 0.7;
+}
+95%{
+   opacity: 1;
+ }
+}
+
+@keyframes LtoR {
+    from {left:80px;top:140px;}
+    to {left: 140px;top:140px;}
+30%{
+   opacity: 0.3;
+ }
+70%{
+   opacity: 0.7;
+}
+95%{
+   opacity: 1;
+ }
+}
+
+@-webkit-keyframes TtoB {
+    from {top:45px;left:150px;}
+    to {top:95px;left:150px;}
+30%{
+   opacity: 0.3;
+ }
+70%{
+   opacity: 0.7;
+}
+95%{
+   opacity: 1;
+ }
+}
+
+@keyframes TtoB {
+    from {top:45px;left:150px;}
+    to {top:110px;left:150px;}
+30%{
+   opacity: 0.3;
+ }
+70%{
+   opacity: 0.7;
+}
+95%{
+   opacity: 1;
+ }
+}
+
+@-webkit-keyframes RtoL {
+    from {left:210px;top:60px}
+    to {left:150px;top:60px}
+30%{
+   opacity: 0.3;
+ }
+70%{
+   opacity: 0.7;
+}
+95%{
+   opacity: 1;
+ }
+}
+
+@keyframes RtoL {
+    from {left:210px;top:60px}
+    to {left:150px;top:60px}
+30%{
+   opacity: 0.3;
+ }
+70%{
+   opacity: 0.7;
+}
+95%{
+   opacity: 1;
+ }
+}
+
+@-webkit-keyframes BtoT {
+    from {top:85px;left:150px;}
+    to {top:18px;left:150px;}
+30%{
+   opacity: 0.3;
+ }
+70%{
+   opacity: 0.7;
+}
+95%{
+   opacity: 1;
+ }
+}
+
+@keyframes BtoT {
+    from {top:85px;left:150px;}
+    to {top:18px;left:150px;}
+30%{
+   opacity: 0.3;
+ }
+70%{
+   opacity: 0.7;
+}
+95%{
+   opacity: 1;
+ }
+}
+
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button> 
+      <a class="navbar-brand" href="index.html">Portfolio</a>
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">This and That <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="animation.html">Animation</a></li>
+           </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<div class='arr_red LtoR' style='left:80px;top:140px;' >&#10143;</div>
+<div class='arr_blue TtoB' style='top:45px;left:141px;'>&#10143;</div>
+<div class='arr_red RtoL' style='left:210px;top:60px' >&#10143;</div>
+<div class='arr_blue BtoT' style='top:85px;left:150px;'> &#10143;</div>
+  
+</div><!-- /.container -->
+	</body>
+</html>
+
+
